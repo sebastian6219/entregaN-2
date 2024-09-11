@@ -1,0 +1,457 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#root {
+    margin: 20px;
+    width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #004080;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Estilos de producto */
+
+#empty-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #f8f9fa;
+    /* Color de fondo claro para un contraste suave */
+    border: 1px solid #ddd;
+    /* Borde gris claro */
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil para darle profundidad */
+}
+
+#empty-cart h4 {
+    margin: 0;
+    color: #333;
+    /* Color de texto oscuro para buena legibilidad */
+}
+
+#empty-cart p {
+    margin: 10px 0;
+    color: #666;
+    /* Color de texto gris para el párrafo */
+}
+
+#empty-cart button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#empty-cart button:hover {
+    background-color: #4a73bb;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.order-title {
+
+    text-align: center;
+    font-size: 1.5;
+    font-weight: 500;
+
+}
+
+/* USUARIO LOGEADO*/
+
+.section-userlog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.divTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.divButtons button {
+    margin: 5px;
+}
+
+/*Registro*/
+
+#register-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    /* Asegúrate de que el borde sea visible */
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#register-form label {
+
+    width: 100%;
+
+}
+
+#register-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#register-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #4a73bb;
+}
+
+/*DEPOSITAR*/
+
+#deposit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    /* Asegúrate de que el borde sea visible */
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+
+}
+
+#deposit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#deposit-form label {
+
+    width: 100%;
+
+}
+
+#deposit-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#deposit-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deposit-form button:hover {
+    background-color: #4a73bb;
+}
+
+/*Transferir*/
+
+#transfer-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    /* Asegúrate de que el borde sea visible */
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Agrega una sombra sutil */
+    z-index: 1000;
+    /* Asegura que el modal esté sobre otros elementos */
+}
+
+#transfer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#transfer-form label {
+    width: 100%;
+}
+
+
+
+#transfer-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#transfer-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#transfer-form button:hover {
+    background-color: #4a73bb;
+}
+
+
+/*INICIO DE SESION*/
+
+#seccion-ingreso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+#formulario-ingreso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario-ingreso label {
+
+    width: 100%;
+
+}
+
+
+#formulario-ingreso input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formulario-ingreso button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario-ingreso button:hover {
+    background-color: #4a73bb;
+}
+
+#seccion-ingreso p {
+    margin-top: 20px;
+}
+
+#register-link {
+    color: #6494ed;
+    text-decoration: none;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Mensajes de éxito y error */
+
+.none-products {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: #003366;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.display {
+
+    display: none;
+
+
+
+}
+
+.appendAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #e7f0ff;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+
+
+    width: auto;
+    height: 50px;
+
+    padding: 10px 30px;
+    z-index: 100;
+    opacity: 50;
+    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+
+.appendAlert.show {
+    opacity: 100;
+}
+
+.appendAlert h4,
+.appendAlert p {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 2px;
+
+}
+
+.success {
+
+    color: #00ff00;
+}
+
+.error {
+    color: red;
+}
+
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+
+    justify-content: center;
+
+}

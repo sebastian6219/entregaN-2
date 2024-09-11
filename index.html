@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco ASA - Inicio</title>
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="alert" class="display"></div>
+        <h1>Banco ASA</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="productos.html">Productos</a>
+            <a href="cart.html">Ordenes de compra</a>
+        </nav>
+    </header>
+
+    <div id="root">
+
+        <section id="seccion-ingreso">
+            <h2>Iniciar Sesión</h2>
+            <form id="formulario-ingreso">
+                <label for="ingreso-dni">DNI:</label>
+                <input type="number" id="ingreso-dni" required>
+                <label for="login-password">Contraseña:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+            <p>¿No tienes una cuenta? <a href="#" id="register-link">Regístrate aquí</a></p>
+        </section>
+
+        <section id="account-section" class="section-userlog" style="display:none;">
+
+            <div class="divTitle">
+                <h2>Bienvenido "<span id="user-name"></span>"</h2>
+                <p>Saldo disponible: $<span id="user-balance">0.00</span></p>
+            </div>
+            <div class="divButtons">
+                <button id="deposit-button">Depositar</button>
+                <button id="transfer-button">Transferir</button>
+                <button id="logout-button">Cerrar Sesión</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Banco ASA</p>
+    </footer>
+
+</body>
+
+
+
+</html>
