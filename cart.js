@@ -9,7 +9,7 @@ function updateUserLoged(updatedUser) {
 
 if (!userLoged) {
     root.innerHTML = `<p  class = "none-products">DEBES INICIAR SESIÓN PARA VER LAS ORDENES DE COMPRA</p>`
-    setTimeout(() => window.location.href = 'index.html', 4000)
+
 } else {
     if (userLoged.tarjetas && userLoged.tarjetas.length > 0) {
         const container = document.createElement('div')

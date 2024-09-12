@@ -36,15 +36,6 @@ const llamadoAlert = (titleAlert, dataAlert, tm, classL) => {
 
     document.body.appendChild(mensajeAlert)
 
-
-    setTimeout(() => mensajeAlert.classList.add('show'), 100)
-
-
-    setTimeout(() => {
-        mensajeAlert.classList.remove('show');
-        setTimeout(() => mensajeAlert.remove(), 500)
-    }, tm)
-
 }
 
 
@@ -120,13 +111,12 @@ registerLink.addEventListener('click', (e) => {
             users.push(newUser)
             localStorage.setItem('users', JSON.stringify(users))
             llamadoAlert('Feiliciades', 'Se ha registrado con éxito', 3000);
-            setTimeout(() => location.reload(), 3000)
 
         }
     });
 });
 
-//Boton de cerrar sesion 
+//Boton para cerrar sesion 
 
 logoutButton.addEventListener('click', () => {
     llamadoAlert(userLoged.userName, "Hasta la proxima", 3000, "none")
@@ -136,12 +126,10 @@ logoutButton.addEventListener('click', () => {
     accountSection.style.display = 'none'
     loginSection.style.display = 'block'
 
-    setTimeout(() => location.reload(), 3000)
-
 });
 
 
-//Boton de Deposito
+//Boton para Deposito
 
 depositButton.addEventListener('click', () => {
     root.innerHTML = `
@@ -170,13 +158,12 @@ depositButton.addEventListener('click', () => {
                 localStorage.setItem('users', JSON.stringify(users))
             }
             llamadoAlert("Depostio realizado", `Se deposito : ${amount}`, 3000, "success")
-            setTimeout(() => location.reload(), 3000)
 
         }
     });
 });
 
-//Boton de Trasferencia 
+//Boton para Trasferencia 
 
 
 transferButton.addEventListener('click', () => {
@@ -220,10 +207,8 @@ transferButton.addEventListener('click', () => {
             localStorage.setItem('users', JSON.stringify(users))
 
             llamadoAlert("Trasferecia realizado con Exito", `Se Transfirio: $${amount} Al Usuario con el DNI: ${(recipientDNI)} `, 3000, "success")
-            setTimeout(() => location.reload(), 3000)
         } else {
             llamadoAlert("Lo Sentimos", `Transferencia inválida o saldo insuficiente`, 3000, "error")
-            setTimeout(() => location.reload(), 3000)
 
         }
     });

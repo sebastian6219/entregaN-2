@@ -8,7 +8,6 @@ if (!userLoged) {
 
     root.innerHTML = `<p class = "none-products">DEBES INICIAR SESIÓN PARA VER LOS PRODUCTOS</p>`
 
-    setTimeout(() => window.location.href = 'index.html', 4000)
 
 } else {
 
@@ -30,10 +29,7 @@ if (!userLoged) {
             localStorage.setItem('loggedInUser', JSON.stringify(userLoged))
         }
 
-        setTimeout(() => {
-            message.textContent = ''
-            message.classList.remove('success', 'error')
-        }, 3000)
+
     }
 
     document.getElementById('solicitar-clasica').addEventListener('click', () => {
