@@ -1,0 +1,712 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+#logo {
+
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    display: flex;
+    gap: 5px;
+
+}
+
+.img-logo {
+
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+
+}
+
+header {
+    background-color: #004080;
+    color: white;
+    padding: 10px;
+    height: 70px;
+}
+
+nav {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+    height: 70px;
+
+}
+
+nav a {
+
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+
+    transition: transform 0.5s ease;
+}
+
+nav a:hover {
+
+    transform: scale(1.1);
+
+}
+
+#root {
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Estilos de producto */
+
+#empty-cart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #f8f9fa;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#empty-cart h4 {
+    margin: 0;
+    color: #333;
+}
+
+#empty-cart p {
+    margin: 10px 0;
+    color: #666;
+
+}
+
+#empty-cart button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#empty-cart button:hover {
+    background-color: #4a73bb;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+.order-title {
+
+    text-align: center;
+    font-size: 1.5;
+    font-weight: 500;
+
+}
+
+
+/* Boton desplegable */
+
+
+body {
+    transition: background-color 0.5s ease;
+
+    background-color: #ffffff;
+
+}
+
+
+.textContainer {
+    max-width: 0;
+
+    width: 400px;
+
+    overflow: hidden;
+
+    transition: max-width 0.5s ease, opacity 0.5s ease;
+
+    opacity: 0;
+
+    background-color: #f0f0f0;
+
+    padding: 10px;
+
+    border-radius: 5px;
+
+}
+
+
+.textVisible {
+    max-width: 400px;
+
+    opacity: 1;
+
+    background-color: #015ebb;
+
+    border: 2px solid black;
+
+    transform: translate(0, 0);
+
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+
+    max-height: 800px;
+
+    overflow-y: auto;
+
+}
+
+.textVisible h2 {
+    color: white;
+
+    font-size: 1rem;
+
+    margin: 2px 0 0 0;
+
+    border-bottom: 0.2px solid white;
+
+}
+
+
+.buttonContain {
+    position: absolute;
+
+    margin-top: 2px;
+
+    margin-left: -18px;
+
+    width: 400px;
+
+    max-height: 800px;
+
+    display: flex;
+
+    flex-direction: row-reverse;
+
+    justify-content: flex-end;
+
+}
+
+/* Estilo para el botón */
+#botonCorredizo {
+    height: 50px;
+
+    width: 50px;
+    cursor: pointer;
+
+    background-color: #6494ed;
+
+    color: #ffffff;
+
+    border: none;
+
+    border-radius: 5px;
+
+    transition: transform 0.5s ease, background-color 0.5s ease;
+
+}
+
+
+body.dark {
+    background-color: #61616181;
+
+    color: #ffffff;
+
+}
+
+
+#botonCorredizo:hover {
+    background-color: #003366;
+
+}
+
+
+.openButton,
+.closeButton {
+    width: 1.5em;
+
+    height: 1.5em;
+
+}
+
+
+.divContainerUser {
+    font-size: 0.9rem;
+
+
+
+    border-bottom: 0.5px solid white;
+
+    margin: 0 20px;
+
+}
+
+
+.section-userlog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+
+    text-align: center;
+
+}
+
+.divTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divButtons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.divButtons button {
+    margin: 5px;
+}
+
+/*Registro*/
+
+#register-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#register-form label {
+
+    width: 100%;
+
+}
+
+#register-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#register-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register-form button:hover {
+    background-color: #4a73bb;
+}
+
+/*DEPOSITAR*/
+
+#deposit-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    z-index: 1000;
+
+}
+
+#deposit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#deposit-form label {
+
+    width: 100%;
+
+}
+
+#deposit-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#deposit-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#deposit-form button:hover {
+    background-color: #4a73bb;
+}
+
+/*Transferir*/
+
+#transfer-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+    border-radius: 10px;
+
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#transfer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#transfer-form label {
+    width: 100%;
+}
+
+
+
+#transfer-form input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#transfer-form button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#transfer-form button:hover {
+    background-color: #4a73bb;
+}
+
+
+/*INICIO DE SESION*/
+
+#seccion-ingreso {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #6494ed4b;
+    border: 1px solid #000;
+
+    border-radius: 10px;
+
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+#formulario-ingreso {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#formulario-ingreso label {
+
+    width: 100%;
+
+}
+
+
+#formulario-ingreso input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#formulario-ingreso button {
+    padding: 10px;
+    background-color: #6494ed;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formulario-ingreso button:hover {
+    background-color: #4a73bb;
+}
+
+#seccion-ingreso p {
+    margin-top: 20px;
+}
+
+#register-link {
+    color: #6494ed;
+    text-decoration: none;
+}
+
+#register-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Mensajes de éxito y error */
+
+.none-products {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    background-color: #003366;
+    border-radius: 20px;
+    color: #fff;
+    padding: 20px;
+}
+
+.display {
+
+    display: none;
+
+}
+
+.appendAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: #e7f0ff;
+    position: absolute;
+    top: 100px;
+    left: 5px;
+
+
+    width: auto;
+    height: 50px;
+
+    padding: 10px 30px;
+    z-index: 100;
+    opacity: 50;
+    transition: opacity 0.5s ease-in-out, top 0.5s ease-in-out;
+}
+
+.appendAlert.show {
+    opacity: 100;
+}
+
+.appendAlert h4,
+.appendAlert p {
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 2px;
+
+}
+
+.success {
+
+    color: #00ff00;
+}
+
+.error {
+    color: red;
+}
+
+
+footer {
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+
+    justify-content: center;
+
+}
+
+
+/*Prestamos*/
+
+
+h2 {
+    color: #004080;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del formulario de simulación de préstamos */
+
+.prestamos-container {
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10rem;
+
+}
+
+.loan-form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.loan-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.loan-form input {
+    width: 100%;
+    max-width: 380px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.loan-form button {
+    background-color: #004080;
+    color: white;
+
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.loan-form button:hover {
+    background-color: #003366;
+}
+
+/* Estilos del resultado */
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e7f0ff;
+    border: 1px solid #004080;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.result h3 {
+    margin-top: 0;
+    color: #004080;
+}
+
+.result p {
+    margin: 10px 0;
+    color: #333;
+}
