@@ -1,21 +1,25 @@
 const root = document.getElementById('root')
 
 const llamadoAlert = (titleAlert, dataAlert, tm, classL) => {
-    if (document.querySelector('.appendAlert')) {
-        document.querySelector('.appendAlert').remove()
-    }
 
-    const mensajeAlert = document.createElement('div')
-    mensajeAlert.className = "appendAlert"
-
-    mensajeAlert.innerHTML = `
-        <h4 class="${classL}">${titleAlert}</h4>
-        <p>${dataAlert}</p>
-    `
-    document.body.appendChild(mensajeAlert)
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-start",
+        showConfirmButton: false,
+        timer: tm,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+    Toast.fire({
+        icon: classL,
+        title: titleAlert,
+        text: dataAlert,
+    });
 
     setTimeout(() => {
-        mensajeAlert.remove()
         if (classL !== "none") window.location.href = 'index.html'
     }, tm)
 }
@@ -189,6 +193,8 @@ const validAccess = () => {
     })
 
     document.getElementById('transfer-button').addEventListener('click', () => {
+
+        appenButton()
         root.innerHTML = `
             <div id="transfer-modal"> 
                 <h2>Realizar Transferencia</h2>
